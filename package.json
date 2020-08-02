@@ -1,0 +1,17 @@
+{
+  "name": "react-context",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Renzo Navarro",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
