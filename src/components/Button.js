@@ -9,10 +9,12 @@ const Button = () => {
   // const text = context === "english" ? "Submit" : "Voorleggen";
   // return <button className="ui button primary">{text}</button>;
 
+  const renderSubmit = (language) => (language === "english" ? "Submit" : "Voorleggen")
+
   const renderButton = (color) => (
     <button className={`ui button ${color}`}>
       <LanguageContext.Consumer>
-        {(value) => (value === "english" ? "Submit" : "Voorleggen")}
+        {({language}) => renderSubmit(language)}
       </LanguageContext.Consumer>
     </button>
   );

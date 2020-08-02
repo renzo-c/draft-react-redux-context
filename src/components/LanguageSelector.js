@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import LanguageContext from "../contexts/LanguageContext";
 
-const LanguageSelector = ({onLanguageChange}) => {
+const LanguageSelector = () => {
+  const { onLanguageChange } = useContext(LanguageContext);
   return (
     <div>
       Select language:
